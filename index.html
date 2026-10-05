@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#8b6a32">
+
+  <title>দ্বি স্বর্নরাজ জুয়েলার্স</title>
+  <meta
+    name="description"
+    content="দ্বি স্বর্নরাজ জুয়েলার্স — নাকফুল, আংটি, কানের দুল, বালা, নূপুর, চুড়ি, লকেট ও চেইনের সংগ্রহ।"
+  >
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+
+  <!-- ================= TOP BAR ================= -->
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <span data-topbar>বিশ্বাস, সৌন্দর্য ও ঐতিহ্যের সঙ্গে স্বর্ণালংকার</span>
+
+      <div class="topbar-right">
+        <a href="tel:+8801000000000">📞 <span data-phone>+880 1000-000000</span></a>
+        <a href="#contact">যোগাযোগ</a>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ================= HEADER ================= -->
+  <header class="site-header" id="home">
+
+    <div class="container nav-wrapper">
+
+      <a href="#home" class="brand">
+        <span class="brand-mark">দ্বি</span>
+
+        <span class="brand-text">
+          <strong data-store-name>দ্বি স্বর্নরাজ জুয়েলার্স</strong>
+          <small data-store-tagline>স্বর্ণে সৌন্দর্য, গহনায় ঐতিহ্য</small>
+        </span>
+      </a>
+
+
+      <nav class="desktop-nav">
+        <a href="#home" class="active">হোম</a>
+        <a href="#products">পণ্যসমূহ</a>
+        <a href="#about">আমাদের সম্পর্কে</a>
+        <a href="#contact">যোগাযোগ</a>
+      </nav>
+
+
+      <div class="header-actions">
+        <button class="icon-button" id="searchButton" aria-label="Search">
+          <span>⌕</span>
+        </button>
+
+        <button
+          class="menu-button"
+          id="menuButton"
+          aria-label="Menu"
+          aria-expanded="false"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+    </div>
+
+
+    <!-- MOBILE MENU -->
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#home">হোম</a>
+      <a href="#products">পণ্যসমূহ</a>
+      <a href="#about">আমাদের সম্পর্কে</a>
+      <a href="#contact">যোগাযোগ</a>
+    </div>
+
+  </header>
+
+
+  <!-- ================= HERO ================= -->
+  <main>
+
+    <section class="hero">
+
+      <div class="hero-slider" id="heroSlider">
+
+        <div class="hero-slide active">
+          <img src="images/banner-1.jpg" alt="স্বর্ণালংকার">
+          <div class="hero-overlay"></div>
+        </div>
+
+        <div class="hero-slide">
+          <img src="images/banner-2.jpg" alt="জুয়েলারি সংগ্রহ">
+          <div class="hero-overlay"></div>
+        </div>
+
+        <div class="hero-slide">
+          <img src="images/banner-3.jpg" alt="স্বর্ণের গহনা">
+          <div class="hero-overlay"></div>
+        </div>
+
+      </div>
+
+
+      <div class="container hero-content">
+
+        <span class="hero-eyebrow" data-hero-eyebrow>
+          স্বাগতম
+        </span>
+
+        <h1 data-hero-title>
+          আপনার সৌন্দর্যে<br>
+          স্বর্ণের ছোঁয়া
+        </h1>
+
+        <p data-hero-description>
+          রুচিশীল ডিজাইন, ঐতিহ্যবাহী সৌন্দর্য এবং আপনার পছন্দের
+          স্বর্ণালংকারের সুন্দর সংগ্রহ।
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#products" class="btn btn-primary">
+            সংগ্রহ দেখুন
+          </a>
+
+          <a href="#contact" class="btn btn-outline">
+            যোগাযোগ করুন
+          </a>
+        </div>
+
+      </div>
+
+
+      <button class="slider-arrow slider-prev" id="heroPrev" aria-label="Previous">
+        ‹
+      </button>
+
+      <button class="slider-arrow slider-next" id="heroNext" aria-label="Next">
+        ›
+      </button>
+
+
+      <div class="hero-dots" id="heroDots"></div>
+
+    </section>
+
+
+    <!-- ================= CATEGORY QUICK LINKS ================= -->
+    <section class="category-navigation">
+
+      <div class="container">
+
+        <div class="section-mini-heading">
+          <span>আমাদের সংগ্রহ</span>
+          <h2>পছন্দের বিভাগ বেছে নিন</h2>
+        </div>
+
+        <div class="category-pills" id="categoryPills"></div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================= PRODUCTS ================= -->
+    <section class="products-section" id="products">
+
+      <div class="container">
+
+        <div class="section-heading">
+
+          <div>
+            <span class="section-label">JEWELLERY COLLECTION</span>
+
+            <h2 data-products-title>
+              আমাদের স্বর্ণালংকার
+            </h2>
+
+            <p data-products-description>
+              প্রতিটি বিভাগের আলাদা সংগ্রহ থেকে আপনার পছন্দের গহনা বেছে নিন।
+            </p>
+          </div>
+
+        </div>
+
+
+        <!-- এখানে JavaScript সব category section তৈরি করবে -->
+        <div id="categorySections"></div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================= ABOUT ================= -->
+    <section class="about-section" id="about">
+
+      <div class="container about-grid">
+
+        <div class="about-image">
+          <img
+            src="images/about-jewellery.jpg"
+            alt="দ্বি স্বর্নরাজ জুয়েলার্স"
+          >
+
+          <div class="about-badge">
+            <strong>স্বর্ণ</strong>
+            <span>ঐতিহ্যের প্রতীক</span>
+          </div>
+        </div>
+
+
+        <div class="about-content">
+
+          <span class="section-label">ABOUT US</span>
+
+          <h2 data-about-title>
+            সৌন্দর্য ও বিশ্বাসের সঙ্গে আপনার পাশে
+          </h2>
+
+          <p data-about-text>
+            দ্বি স্বর্নরাজ জুয়েলার্সে আমরা রুচিশীল ও আকর্ষণীয়
+            স্বর্ণালংকারের সংগ্রহ উপস্থাপন করতে চাই। নাকফুল থেকে
+            শুরু করে আংটি, কানের দুল, বালা, নূপুর, লকেট ও চেইন—
+            প্রতিটি বিভাগে রয়েছে বিভিন্ন ডিজাইনের পণ্য।
+          </p>
+
+
+          <div class="about-features">
+
+            <div class="feature">
+              <span>✦</span>
+              <div>
+                <strong>রুচিশীল ডিজাইন</strong>
+                <small>আধুনিক ও ঐতিহ্যবাহী</small>
+              </div>
+            </div>
+
+            <div class="feature">
+              <span>✦</span>
+              <div>
+                <strong>বিভিন্ন সংগ্রহ</strong>
+                <small>একাধিক ক্যাটাগরি</small>
+              </div>
+            </div>
+
+            <div class="feature">
+              <span>✦</span>
+              <div>
+                <strong>সহজ যোগাযোগ</strong>
+                <small>অর্ডার ও তথ্যের জন্য</small>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================= CONTACT ================= -->
+    <section class="contact-section" id="contact">
+
+      <div class="container">
+
+        <div class="contact-card">
+
+          <div class="contact-text">
+
+            <span class="section-label">CONTACT</span>
+
+            <h2 data-contact-title>
+              আপনার পছন্দের গহনা সম্পর্কে জানতে যোগাযোগ করুন
+            </h2>
+
+            <p data-contact-text>
+              কোনো পণ্য সম্পর্কে বিস্তারিত জানতে বা অর্ডারের জন্য
+              আমাদের সঙ্গে যোগাযোগ করতে পারেন।
+            </p>
+
+          </div>
+
+
+          <div class="contact-actions">
+
+            <a
+              class="contact-button"
+              href="tel:+8801000000000"
+            >
+              <span>📞</span>
+              <div>
+                <small>ফোন করুন</small>
+                <strong data-phone>+880 1000-000000</strong>
+              </div>
+            </a>
+
+
+            <a
+              class="contact-button"
+              id="facebookButton"
+              href="#"
+              target="_blank"
+              rel="noopener"
+            >
+              <span>f</span>
+              <div>
+                <small>Facebook</small>
+                <strong>আমাদের পেজ</strong>
+              </div>
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="site-footer">
+
+    <div class="container footer-grid">
+
+      <div class="footer-brand">
+
+        <a href="#home" class="brand">
+          <span class="brand-mark">দ্বি</span>
+
+          <span class="brand-text">
+            <strong data-store-name>দ্বি স্বর্নরাজ জুয়েলার্স</strong>
+            <small data-store-tagline>স্বর্ণে সৌন্দর্য, গহনায় ঐতিহ্য</small>
+          </span>
+        </a>
+
+        <p>
+          সৌন্দর্য, ঐতিহ্য ও রুচিশীলতার সঙ্গে আপনার পছন্দের
+          স্বর্ণালংকার।
+        </p>
+
+      </div>
+
+
+      <div class="footer-links">
+
+        <h3>দ্রুত লিংক</h3>
+
+        <a href="#home">হোম</a>
+        <a href="#products">পণ্যসমূহ</a>
+        <a href="#about">আমাদের সম্পর্কে</a>
+        <a href="#contact">যোগাযোগ</a>
+
+      </div>
+
+
+      <div class="footer-contact">
+
+        <h3>যোগাযোগ</h3>
+
+        <a href="tel:+8801000000000">
+          📞 <span data-phone>+880 1000-000000</span>
+        </a>
+
+        <a href="#contact">
+          অর্ডার ও বিস্তারিত জানতে যোগাযোগ করুন
+        </a>
+
+      </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+      <div class="container">
+
+        <span data-footer>
+          © 2026 দ্বি স্বর্নরাজ জুয়েলার্স — সর্বস্বত্ব সংরক্ষিত।
+        </span>
+
+        <span>
+          Jewellery Collection
+        </span>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+
+  <!-- ================= SEARCH ================= -->
+  <div class="search-panel" id="searchPanel">
+
+    <div class="search-box">
+
+      <button class="search-close" id="searchClose">×</button>
+
+      <span class="section-label">SEARCH</span>
+
+      <h2>আপনার পছন্দের গহনা খুঁজুন</h2>
+
+      <div class="search-input-wrap">
+
+        <input
+          type="search"
+          id="searchInput"
+          placeholder="যেমন: আংটি, নাকফুল..."
+          autocomplete="off"
+        >
+
+        <button id="searchSubmit">
+          খুঁজুন
+        </button>
+
+      </div>
+
+      <div id="searchResults"></div>
+
+    </div>
+
+  </div>
+
+
+  <!-- ================= PRODUCT MODAL ================= -->
+  <div class="modal" id="productModal" aria-hidden="true">
+
+    <div class="modal-backdrop" data-close-modal></div>
+
+    <div class="modal-content">
+
+      <button
+        class="modal-close"
+        id="closeModal"
+        aria-label="Close"
+      >
+        ×
+      </button>
+
+
+      <div class="modal-gallery">
+
+        <div class="modal-main-image-wrap">
+
+          <button
+            class="gallery-arrow gallery-prev"
+            id="modalPrev"
+            aria-label="Previous product"
+          >
+            ‹
+          </button>
+
+          <img
+            id="modalMainImage"
+            class="modal-main-image"
+            src=""
+            alt=""
+          >
+
+          <button
+            class="gallery-arrow gallery-next"
+            id="modalNext"
+            aria-label="Next product"
+          >
+            ›
+          </button>
+
+          <button
+            class="image-zoom-button"
+            id="openZoom"
+            aria-label="Zoom image"
+          >
+            ⛶
+          </button>
+
+        </div>
+
+
+        <div class="modal-thumbs" id="modalThumbs"></div>
+
+      </div>
+
+
+      <div class="modal-info">
+
+        <span class="modal-category" id="modalCategory"></span>
+
+        <h2 id="modalTitle"></h2>
+
+        <div class="weight-box">
+
+          <span>আনুমানিক ওজন</span>
+
+          <strong id="modalWeight"></strong>
+
+        </div>
+
+        <p id="modalDescription"></p>
+
+
+        <div class="modal-note">
+          <span>✓</span>
+          <p>
+            ওজন ও ডিজাইন নমুনাভেদে পরিবর্তিত হতে পারে।
+            অর্ডারের আগে বিস্তারিত জেনে নিন।
+          </p>
+        </div>
+
+
+        <a
+          href="#"
+          target="_blank"
+          rel="noopener"
+          class="modal-order"
+          id="modalWhatsapp"
+        >
+          WhatsApp-এ অর্ডার / জানতে চাই
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- ================= ZOOM VIEWER ================= -->
+  <div class="zoom-overlay" id="zoomOverlay">
+
+    <button class="zoom-close" id="zoomClose">×</button>
+
+    <div class="zoom-toolbar">
+
+      <button id="zoomOut">−</button>
+      <button id="zoomReset">100%</button>
+      <button id="zoomIn">+</button>
+
+    </div>
+
+    <div class="zoom-image-area">
+
+      <img
+        id="zoomImage"
+        src=""
+        alt=""
+      >
+
+    </div>
+
+  </div>
+
+</body>
+</html>
